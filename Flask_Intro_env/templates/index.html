@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block Name_Link %}
+
+{% for user in users %}
+        <li> {{ user }} </li>
+        <image src="{{ url_for('static', filename='images/'+ user +'.jpg')}}", width="400", height="300">
+    {% endfor %} 
+
+{% endblock %}
